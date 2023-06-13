@@ -17,3 +17,17 @@ D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\ru\Learning
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.csproj.CopyComplete
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.exe
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.pdb
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.AddingUserForm.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.ArticlesForm.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.MainMenuForm.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.TestsForm.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.UserForm.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.AddingUserForm.ru.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.ArticlesForm.ru.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.MainMenuForm.ru.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.TestsForm.ru.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.UserForm.ru.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\bin\Debug\Pbkdf2.dll
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.Migrations.initial.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.VideoForm.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.VideoForm.ru.resources

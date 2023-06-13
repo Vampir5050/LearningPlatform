@@ -42,6 +42,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Pbkdf2, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pbkdf2.1.2.0\lib\net40\Pbkdf2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -56,6 +59,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\AdminManager.cs" />
+    <Compile Include="Controller\Authorization.cs" />
+    <Compile Include="Controller\Encrypt.cs" />
+    <Compile Include="Controller\IEncrypt.cs" />
+    <Compile Include="CueTextBox .cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Migrations\202306131429477_initial.cs" />
+    <Compile Include="Migrations\202306131429477_initial.designer.cs">
+      <DependentUpon>202306131429477_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Event.cs" />
     <Compile Include="Model\Group.cs" />
     <Compile Include="Model\LearningPlatformDbContext.cs" />
@@ -67,12 +82,48 @@
     <Compile Include="Model\UserData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\AddingUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddingUserForm.designer.cs">
+      <DependentUpon>AddingUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ArticlesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ArticlesForm.designer.cs">
+      <DependentUpon>ArticlesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\AuthorizationForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\AuthorizationForm.designer.cs">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainMenuForm.designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserForm.designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\VideoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\VideoForm.Designer.cs">
+      <DependentUpon>VideoForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Migrations\202306131429477_initial.resx">
+      <DependentUpon>202306131429477_initial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,11 +134,47 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\AddingUserForm.resx">
+      <DependentUpon>AddingUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddingUserForm.ru.resx">
+      <DependentUpon>AddingUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ArticlesForm.resx">
+      <DependentUpon>ArticlesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ArticlesForm.ru.resx">
+      <DependentUpon>ArticlesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\AuthorizationForm.resx">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\AuthorizationForm.ru.resx">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainMenuForm.ru.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TestsForm.resx">
+      <DependentUpon>TestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TestsForm.ru.resx">
+      <DependentUpon>TestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserForm.ru.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\VideoForm.resx">
+      <DependentUpon>VideoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\VideoForm.ru.resx">
+      <DependentUpon>VideoForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

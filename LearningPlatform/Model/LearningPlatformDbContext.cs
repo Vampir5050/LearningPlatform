@@ -8,9 +8,11 @@ using System.Data.Entity;
 
 namespace LearningPlatform.Model
 {
+
     public class LearningPlatformDbContext : DbContext
     {
-        public  LearningPlatformDbContext():base("Academy")
+
+        public  LearningPlatformDbContext():base("DefaultConnection")
         {
             
         }
