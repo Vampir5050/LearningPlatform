@@ -42,7 +42,7 @@ namespace LearningPlatform.View
             // ArticlesButton
             // 
             resources.ApplyResources(this.ArticlesButton, "ArticlesButton");
-            this.ArticlesButton.BackColor = System.Drawing.Color.Transparent;
+            this.ArticlesButton.BackColor = System.Drawing.Color.LightBlue;
             this.ArticlesButton.Name = "ArticlesButton";
             this.ArticlesButton.UseVisualStyleBackColor = false;
             this.ArticlesButton.Click += new System.EventHandler(this.ArticlesButton_Click_1);
@@ -50,7 +50,7 @@ namespace LearningPlatform.View
             // VideoButton
             // 
             resources.ApplyResources(this.VideoButton, "VideoButton");
-            this.VideoButton.BackColor = System.Drawing.Color.Transparent;
+            this.VideoButton.BackColor = System.Drawing.Color.LightBlue;
             this.VideoButton.Name = "VideoButton";
             this.VideoButton.UseVisualStyleBackColor = false;
             this.VideoButton.Click += new System.EventHandler(this.VideoButton_Click_1);
@@ -58,7 +58,7 @@ namespace LearningPlatform.View
             // TestsButton
             // 
             resources.ApplyResources(this.TestsButton, "TestsButton");
-            this.TestsButton.BackColor = System.Drawing.Color.Transparent;
+            this.TestsButton.BackColor = System.Drawing.Color.LightBlue;
             this.TestsButton.Name = "TestsButton";
             this.TestsButton.UseVisualStyleBackColor = false;
             this.TestsButton.Click += new System.EventHandler(this.TestsButton_Click_1);
@@ -66,6 +66,8 @@ namespace LearningPlatform.View
             // LabelName
             // 
             resources.ApplyResources(this.LabelName, "LabelName");
+            this.LabelName.BackColor = System.Drawing.Color.LightBlue;
+            this.LabelName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LabelName.Name = "LabelName";
             // 
             // pictureBox2
@@ -78,7 +80,7 @@ namespace LearningPlatform.View
             // AdminButton
             // 
             resources.ApplyResources(this.AdminButton, "AdminButton");
-            this.AdminButton.BackColor = System.Drawing.Color.Transparent;
+            this.AdminButton.BackColor = System.Drawing.Color.LightBlue;
             this.AdminButton.Name = "AdminButton";
             this.AdminButton.UseVisualStyleBackColor = false;
             this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);

@@ -121,6 +121,9 @@
   <data name="ArticlesButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
+  <data name="ArticlesButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ArticlesButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Elephant, 13.8pt</value>
@@ -147,6 +150,9 @@
   <data name="VideoButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
+  <data name="VideoButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="VideoButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Elephant, 13.8pt</value>
   </data>
@@ -170,6 +176,9 @@
   </data>
   <data name="TestsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
+  </data>
+  <data name="TestsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="TestsButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Elephant, 13.8pt</value>
@@ -1309,20 +1318,26 @@
   <data name="AdminButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
+  <data name="AdminButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="AdminButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Elephant, 13.8pt</value>
   </data>
   <data name="AdminButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="AdminButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>965, 411</value>
+  </data>
   <data name="AdminButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="AdminButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 42</value>
+    <value>250, 72</value>
   </data>
   <data name="AdminButton.Text" xml:space="preserve">
-    <value>Администратор</value>
+    <value>Админ управление</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>13, 24</value>

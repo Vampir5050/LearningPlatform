@@ -42,5 +42,17 @@ namespace LearningPlatform.Controller
             await _context.SaveChangesAsync();
             return true;
         }
+        public async Task <bool> AddEducationalVideo(EducationalVideo receiedEducationalVideo)
+        {
+            var educationalVideo = await _context.EducationalVideos.Where
+                (e => e.Subject == receiedEducationalVideo.Subject && e.Name == receiedEducationalVideo.Name).FirstOrDefaultAsync();
+            if(educationalVideo!=null)
+            {
+                return false;
+            }
+            _context.EducationalVideos.Add(receiedEducationalVideo);
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }

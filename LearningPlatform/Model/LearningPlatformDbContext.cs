@@ -25,6 +25,7 @@ namespace LearningPlatform.Model
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Test> Tests { get; set; }
         public DbSet<Question> Questions { get; set; }
+        public DbSet<EducationalVideo> EducationalVideos { get; set; }
     }
 
 }

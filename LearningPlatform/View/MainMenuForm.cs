@@ -1,4 +1,5 @@
 ﻿using LearningPlatform.Model;
+using LearningPlatform.View.AdminForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,14 @@ namespace LearningPlatform.View
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             this.SetStyle(ControlStyles.ResizeRedraw, true);
             #endregion
+            if(user.Role == RoleType.Admin)
+            {
+                AdminButton.Visible = true;
+            }
+            else
+            {
+                AdminButton.Visible = false;
+            }
             this.user = user;
             LabelName.Text += $"{user.PersonalData.FirstName} {user.PersonalData.SecondName}";
 
@@ -51,7 +60,7 @@ namespace LearningPlatform.View
         private void VideoButton_Click_1(object sender, EventArgs e)
         {
             this.Visible = false;
-            if (new VideoForm().ShowDialog() == DialogResult.Cancel)
+            if (new VideoSelectionForm().ShowDialog() == DialogResult.Cancel)
             {
                 this.Visible = true;
             }
@@ -69,7 +78,7 @@ namespace LearningPlatform.View
         private void AdminButton_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            if (new AddingUserForm().ShowDialog() == DialogResult.Cancel)
+            if (new AdminMenuForm().ShowDialog() == DialogResult.Cancel)
             {
                 this.Visible = true;
             }
