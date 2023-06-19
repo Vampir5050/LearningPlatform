@@ -15,5 +15,10 @@ namespace LearningPlatform.Model
         {
             Questions = new List<Question>();
         }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

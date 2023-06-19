@@ -90,6 +90,12 @@
     <Compile Include="View\AdminForms\AddingEducationVideoForm.Designer.cs">
       <DependentUpon>AddingEducationVideoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\AdminForms\AddingTestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminForms\AddingTestsForm.Designer.cs">
+      <DependentUpon>AddingTestsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\AdminForms\AddingUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,12 @@
     </Compile>
     <Compile Include="View\MainMenuForm.designer.cs">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TakeATestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TakeATestForm.Designer.cs">
+      <DependentUpon>TakeATestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\TestsForm.cs">
       <SubType>Form</SubType>
@@ -160,6 +172,9 @@
     <EmbeddedResource Include="View\AdminForms\AddingEducationVideoForm.ru.resx">
       <DependentUpon>AddingEducationVideoForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminForms\AddingTestsForm.resx">
+      <DependentUpon>AddingTestsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\AdminForms\AddingUserForm.resx">
       <DependentUpon>AddingUserForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\MainMenuForm.ru.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TakeATestForm.resx">
+      <DependentUpon>TakeATestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TestsForm.resx">
       <DependentUpon>TestsForm.cs</DependentUpon>
