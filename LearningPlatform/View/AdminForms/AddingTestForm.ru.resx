@@ -118,76 +118,112 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AddingUserButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
+  <data name="RoleComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
-  <data name="AddingUserButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="RoleComboBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="AddingUserButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Elephant, 13.8pt</value>
+  <data name="RoleComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 10.8pt</value>
   </data>
-  <data name="AddingUserButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="RoleComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 28</value>
   </data>
-  <data name="AddingUserButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 65</value>
+  <data name="RoleComboBox.Text" xml:space="preserve">
+    <value>Выберите роль</value>
   </data>
-  <data name="AddingUserButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 52</value>
+  <data name="AddButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
-  <data name="AddingUserButton.Text" xml:space="preserve">
-    <value>Добавить пользователей</value>
-  </data>
-  <data name="AddingEducationVideoButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="AddingEducationVideoButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="AddButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="AddingEducationVideoButton.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="AddButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Elephant, 13.8pt</value>
   </data>
-  <data name="AddingEducationVideoButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="AddButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="AddingEducationVideoButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 153</value>
+  <data name="AddButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 4, 5, 4</value>
   </data>
-  <data name="AddingEducationVideoButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 52</value>
+  <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 72</value>
   </data>
-  <data name="AddingEducationVideoButton.Text" xml:space="preserve">
-    <value>Добавить учебные видео</value>
+  <data name="AddButton.Text" xml:space="preserve">
+    <value>Добавить пользователя</value>
   </data>
-  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
+  <data name="PhoneNumbeTextBox.Mask" xml:space="preserve">
+    <value>8(999) 000-0000</value>
   </data>
-  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="PhoneNumbeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 24</value>
   </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Elephant, 13.8pt</value>
+  <data name="LoginTextBox.Cue" xml:space="preserve">
+    <value>Введите логин</value>
   </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="LoginTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 71</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>317, 65</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 52</value>
+  <data name="LoginTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 24</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="LoginTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Добавить тест</value>
+  <data name="FirstNameTextBox.Cue" xml:space="preserve">
+    <value>Введите имя</value>
+  </data>
+  <data name="FirstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 125</value>
+  </data>
+  <data name="FirstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 24</value>
+  </data>
+  <data name="FirstNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="SecondNameTextBox.Cue" xml:space="preserve">
+    <value>Введите фамилию</value>
+  </data>
+  <data name="SecondNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 182</value>
+  </data>
+  <data name="SecondNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 24</value>
+  </data>
+  <data name="SecondNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="EmailTextBox.Cue" xml:space="preserve">
+    <value>Введите email</value>
+  </data>
+  <data name="EmailTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 288</value>
+  </data>
+  <data name="EmailTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 24</value>
+  </data>
+  <data name="EmailTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="PasswordTextBox.Cue" xml:space="preserve">
+    <value>Введите пароль</value>
+  </data>
+  <data name="PasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 348</value>
+  </data>
+  <data name="PasswordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 24</value>
+  </data>
+  <data name="PasswordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>10, 18</value>
+    <value>13, 24</value>
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -10594,12 +10630,12 @@
 </value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 506</value>
+    <value>1300, 540</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Elephant, 10.8pt</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Меню администратора</value>
+    <value>Добавление пользователя</value>
   </data>
 </root>

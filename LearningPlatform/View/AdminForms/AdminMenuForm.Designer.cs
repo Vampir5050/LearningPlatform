@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminMenuForm));
             this.AddingUserButton = new System.Windows.Forms.Button();
             this.AddingEducationVideoButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AddingUserButton
@@ -49,10 +50,19 @@
             this.AddingEducationVideoButton.UseVisualStyleBackColor = false;
             this.AddingEducationVideoButton.Click += new System.EventHandler(this.AddingEducationVideoButton_Click);
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.Color.LightBlue;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // AdminMenuForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.AddingEducationVideoButton);
             this.Controls.Add(this.AddingUserButton);
             this.Name = "AdminMenuForm";
@@ -64,5 +74,6 @@
 
         private System.Windows.Forms.Button AddingUserButton;
         private System.Windows.Forms.Button AddingEducationVideoButton;
+        private System.Windows.Forms.Button button1;
     }
 }
