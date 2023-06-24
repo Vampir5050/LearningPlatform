@@ -23,7 +23,6 @@ D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPla
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.TestsForm.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.UserForm.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.AddingUserForm.ru.resources
-D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.ArticlesForm.ru.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.MainMenuForm.ru.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.TestsForm.ru.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.UserForm.ru.resources
@@ -41,3 +40,5 @@ D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPla
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.AdminForms.AdminMenuForm.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.AdminForms.AddingEducationVideoForm.ru.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.AdminForms.AdminMenuForm.ru.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.ArticlesForm.ru.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.Migrations.CreatArticles.resources
