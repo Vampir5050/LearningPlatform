@@ -28,6 +28,10 @@ namespace LearningPlatform.Controller
         {
             return await _context.EducationalVideos.ToListAsync();
         }
+        public async Task<List<Article>> GetArticles()
+        {
+            return await _context.Articles.ToListAsync();
+        }
 
         public async Task<List<Test>> GetTestsAsync()
         {

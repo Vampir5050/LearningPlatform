@@ -32,6 +32,8 @@ namespace LearningPlatform.View
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArticlesForm));
             this.LabelName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ArticleslistBox = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,13 +49,32 @@ namespace LearningPlatform.View
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
+            // ArticleslistBox
+            // 
+            resources.ApplyResources(this.ArticleslistBox, "ArticleslistBox");
+            this.ArticleslistBox.BackColor = System.Drawing.Color.LightBlue;
+            this.ArticleslistBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ArticleslistBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ArticleslistBox.FormattingEnabled = true;
+            this.ArticleslistBox.Name = "ArticleslistBox";
+            this.ArticleslistBox.DoubleClick += new System.EventHandler(this.ArticleslistBox_DoubleClick);
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.LightBlue;
+            this.label1.Name = "label1";
+            // 
             // ArticlesForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ArticleslistBox);
             this.Controls.Add(this.LabelName);
             this.Controls.Add(this.pictureBox2);
             this.Name = "ArticlesForm";
+            this.Load += new System.EventHandler(this.ArticlesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -64,5 +85,7 @@ namespace LearningPlatform.View
 
         private Label LabelName;
         private PictureBox pictureBox2;
+        private ListBox ArticleslistBox;
+        private Label label1;
     }
 }

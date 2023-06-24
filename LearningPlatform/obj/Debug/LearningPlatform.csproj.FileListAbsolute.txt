@@ -23,7 +23,6 @@ D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPla
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.TestsForm.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.UserForm.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.AddingUserForm.ru.resources
-D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.ArticlesForm.ru.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.MainMenuForm.ru.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.TestsForm.ru.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.UserForm.ru.resources
@@ -41,6 +40,10 @@ D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPla
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.AdminForms.AdminMenuForm.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.AdminForms.AddingEducationVideoForm.ru.resources
 D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.AdminForms.AdminMenuForm.ru.resources
+<<<<<<< HEAD
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.View.ArticlesForm.ru.resources
+D:\Study\С#\TeamProject\LearningPlatform\LearningPlatform\obj\Debug\LearningPlatform.Migrations.CreatArticles.resources
+=======
 E:\repos\LearnPlat1\LearningPlatform\bin\Debug\LearningPlatform.exe.config
 E:\repos\LearnPlat1\LearningPlatform\bin\Debug\LearningPlatform.exe
 E:\repos\LearnPlat1\LearningPlatform\bin\Debug\LearningPlatform.pdb
@@ -86,3 +89,4 @@ E:\repos\LearnPlat1\LearningPlatform\obj\Debug\LearningPlatform.exe
 E:\repos\LearnPlat1\LearningPlatform\obj\Debug\LearningPlatform.pdb
 E:\repos\LearnPlat1\LearningPlatform\obj\Debug\LearningPlatform.View.AdminForms.AddingTestsForm.resources
 E:\repos\LearnPlat1\LearningPlatform\obj\Debug\LearningPlatform.View.TakeATestForm.resources
+>>>>>>> 76b982117b5c92fcbf355e87e22e1289bd03d7b7
