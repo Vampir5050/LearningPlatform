@@ -24,6 +24,10 @@ namespace LearningPlatform.Controller
         }
         //singlton end
 
+        public async Task<List<Model.User>> GetUsers()
+        {
+            return await _context.ApplicationUsers.Include(x=>x.PersonalData).ToListAsync();
+        }
         public async Task<List<EducationalVideo>> GetEducationalVideos()
         {
             return await _context.EducationalVideos.ToListAsync();

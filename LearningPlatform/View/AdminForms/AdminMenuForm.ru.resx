@@ -131,14 +131,14 @@
   <data name="AddingUserButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="AddingUserButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 65</value>
+  <data name="AddingUserButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="AddingUserButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 52</value>
+    <value>197, 50</value>
   </data>
   <data name="AddingUserButton.Text" xml:space="preserve">
-    <value>Добавить пользователей</value>
+    <value>Пользователи</value>
   </data>
   <data name="AddingEducationVideoButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -153,10 +153,13 @@
     <value>NoControl</value>
   </data>
   <data name="AddingEducationVideoButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 153</value>
+    <value>13, 168</value>
+  </data>
+  <data name="AddingEducationVideoButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="AddingEducationVideoButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 52</value>
+    <value>364, 69</value>
   </data>
   <data name="AddingEducationVideoButton.Text" xml:space="preserve">
     <value>Добавить учебные видео</value>
@@ -174,10 +177,13 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>317, 65</value>
+    <value>13, 274</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 52</value>
+    <value>364, 69</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
@@ -185,9 +191,6 @@
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Добавить тест</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>10, 18</value>
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -10592,12 +10595,6 @@
         DS6n/rvyooqwL1t/x/y/7gqvffw/U0UVk9zPqS2/3F/GoNM/48pv+ulFFIoZd/8AH3H9f6U8/foorQst
         p9xPpUJ/ioopCIpPuSU6H/UH/doopgRT/wDH5/wAVBL/AKwfWiiqKJ0+5+IqOb7h/GiigaP/2Q==
 </value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 506</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Меню администратора</value>

@@ -42,6 +42,22 @@ namespace LearningPlatform.Controller
             await _context.SaveChangesAsync();
             return true;
         }
+        public async Task ChangeUser(User changedUser)
+        {
+            var user = await _context.ApplicationUsers.Include(x => x.PersonalData).Where(x => x.Login == changedUser.Login).FirstOrDefaultAsync();
+            user.PersonalData.FirstName = changedUser.PersonalData.FirstName;
+            user.PersonalData.SecondName = changedUser.PersonalData.SecondName;
+            user.PersonalData.PhoneNumber = changedUser.PersonalData.SecondName;
+            user.PersonalData.Email = changedUser.PersonalData.Email;
+            await _context.SaveChangesAsync();
+        }
+        public async Task RemoveUser(User changedUser)
+        {
+            var user = await _context.ApplicationUsers.Include(x => x.PersonalData).Where(x => x.Login == changedUser.Login).FirstOrDefaultAsync();
+            _context.ApplicationUsers.Remove(user);
+            _context.UserDatas.Remove(user.PersonalData);
+            await _context.SaveChangesAsync();
+        }
         public async Task <bool> AddEducationalVideo(EducationalVideo receiedEducationalVideo)
         {
             var educationalVideo = await _context.EducationalVideos.Where
@@ -54,5 +70,6 @@ namespace LearningPlatform.Controller
             await _context.SaveChangesAsync();
             return true;
         }
+        
     }
 }

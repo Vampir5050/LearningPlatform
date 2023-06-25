@@ -29,7 +29,7 @@ namespace LearningPlatform.View.AdminForms
         private void AddingUserButton_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            if (new AddingUserForm().ShowDialog() == DialogResult.Cancel)
+            if (new UsersForm().ShowDialog() == DialogResult.Cancel)
             {
                 this.Visible = true;
             }
