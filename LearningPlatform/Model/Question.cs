@@ -11,5 +11,10 @@ namespace LearningPlatform.Model
         public int ID { get; set; }
         public string Title { get; set; }
         public string Answers { get; set; }
+
+        public override string ToString()
+        {
+            return Title;
+        }
     }
 }

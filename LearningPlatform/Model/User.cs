@@ -28,5 +28,9 @@ namespace LearningPlatform.Model
             this.PersonalData = new UserData();
             this.Marks = new List<Mark>();
         }
+        public override string ToString()
+        {
+            return $"{Login} - {PersonalData.FirstName} - {PersonalData.SecondName}";
+        }
     }
 }

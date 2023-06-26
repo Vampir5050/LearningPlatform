@@ -8,9 +8,11 @@ using System.Data.Entity;
 
 namespace LearningPlatform.Model
 {
+
     public class LearningPlatformDbContext : DbContext
     {
-        public  LearningPlatformDbContext():base("Academy")
+
+        public  LearningPlatformDbContext():base("DefaultConnection")
         {
             
         }
@@ -23,6 +25,8 @@ namespace LearningPlatform.Model
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Test> Tests { get; set; }
         public DbSet<Question> Questions { get; set; }
+        public DbSet<EducationalVideo> EducationalVideos { get; set; }
+        public DbSet<Article> Articles { get; set; }
     }
 
 }

@@ -42,6 +42,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Pbkdf2, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pbkdf2.1.2.0\lib\net40\Pbkdf2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -56,6 +59,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\AdminManager.cs" />
+    <Compile Include="Controller\Authorization.cs" />
+    <Compile Include="Controller\DatabaseManagement.cs" />
+    <Compile Include="Controller\Encrypt.cs" />
+    <Compile Include="Controller\IEncrypt.cs" />
+    <Compile Include="CueTextBox .cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Migrations\202306131617216_InitialCreate.cs" />
+    <Compile Include="Migrations\202306131617216_InitialCreate.designer.cs">
+      <DependentUpon>202306131617216_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202306191800500_CreatArticles.cs" />
+    <Compile Include="Migrations\202306191800500_CreatArticles.designer.cs">
+      <DependentUpon>202306191800500_CreatArticles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Article.cs" />
+    <Compile Include="Model\EducationalVideo.cs" />
     <Compile Include="Model\Event.cs" />
     <Compile Include="Model\Group.cs" />
     <Compile Include="Model\LearningPlatformDbContext.cs" />
@@ -67,12 +89,81 @@
     <Compile Include="Model\UserData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\AdminForms\AddingEducationVideoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminForms\AddingEducationVideoForm.Designer.cs">
+      <DependentUpon>AddingEducationVideoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminForms\AddingTestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminForms\AddingTestsForm.Designer.cs">
+      <DependentUpon>AddingTestsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminForms\UsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminForms\UsersForm.designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminForms\AdminMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdminForms\AdminMenuForm.Designer.cs">
+      <DependentUpon>AdminMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ArticlesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ArticlesForm.designer.cs">
+      <DependentUpon>ArticlesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\AuthorizationForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\AuthorizationForm.designer.cs">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainMenuForm.designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TakeATestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TakeATestForm.Designer.cs">
+      <DependentUpon>TakeATestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserForm.designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\VideoPlayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\VideoPlayForm.Designer.cs">
+      <DependentUpon>VideoPlayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\VideoSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\VideoSelectionForm.Designer.cs">
+      <DependentUpon>VideoSelectionForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Migrations\202306131617216_InitialCreate.resx">
+      <DependentUpon>202306131617216_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306191800500_CreatArticles.resx">
+      <DependentUpon>202306191800500_CreatArticles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,11 +174,68 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\AdminForms\AddingEducationVideoForm.resx">
+      <DependentUpon>AddingEducationVideoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminForms\AddingEducationVideoForm.ru.resx">
+      <DependentUpon>AddingEducationVideoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminForms\AddingTestsForm.resx">
+      <DependentUpon>AddingTestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminForms\UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminForms\UsersForm.ru.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminForms\AdminMenuForm.resx">
+      <DependentUpon>AdminMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AdminForms\AdminMenuForm.ru.resx">
+      <DependentUpon>AdminMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ArticlesForm.resx">
+      <DependentUpon>ArticlesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ArticlesForm.ru.resx">
+      <DependentUpon>ArticlesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\AuthorizationForm.resx">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\AuthorizationForm.ru.resx">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainMenuForm.ru.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TakeATestForm.resx">
+      <DependentUpon>TakeATestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TestsForm.resx">
+      <DependentUpon>TestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TestsForm.ru.resx">
+      <DependentUpon>TestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserForm.ru.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\VideoPlayForm.resx">
+      <DependentUpon>VideoPlayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\VideoSelectionForm.resx">
+      <DependentUpon>VideoSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\VideoSelectionForm.ru.resx">
+      <DependentUpon>VideoSelectionForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -103,7 +251,25 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Image\AutorizationImg.jpg" />
     <Content Include="Image\Background.jpg" />
