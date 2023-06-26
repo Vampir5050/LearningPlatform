@@ -34,7 +34,7 @@ namespace LearningPlatform.View
         {
             //проверки на заполненость полей
             #region
-            if (string.IsNullOrWhiteSpace(LoginTextBox.Text))
+            if (string.IsNullOrWhiteSpace(Login.Text))
             {
                 return;
             }
@@ -65,7 +65,7 @@ namespace LearningPlatform.View
             #endregion
             var user = new Model.User()
             {
-                Login = LoginTextBox.Text,
+                Login = Login.Text,
                 Password = PasswordTextBox.Text
             };
             switch (RoleComboBox.SelectedItem)
@@ -103,13 +103,12 @@ namespace LearningPlatform.View
             {
                 MessageBox.Show("Такой пользователь уже существует");
             }
-            LoginTextBox.Text = "";
+            Login.Text = "";
             FirstNameTextBox.Text = "";
             SecondNameTextBox.Text = "";
             PhoneNumbeTextBox.Text = "";
             EmailTextBox.Text = "";
             PasswordTextBox.Text = "";
-
         }
 
         private async void ChangeButton_Click(object sender, EventArgs e)

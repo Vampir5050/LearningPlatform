@@ -50,6 +50,7 @@ namespace LearningPlatform.View
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.RemoveButton = new System.Windows.Forms.Button();
             this.RemoveUserComboBox = new System.Windows.Forms.ComboBox();
+            this.Login = new CueTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -58,9 +59,9 @@ namespace LearningPlatform.View
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -71,6 +72,7 @@ namespace LearningPlatform.View
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Teal;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage1.Controls.Add(this.Login);
             this.tabPage1.Controls.Add(this.PasswordTextBox);
             this.tabPage1.Controls.Add(this.EmailTextBox);
             this.tabPage1.Controls.Add(this.SecondNameTextBox);
@@ -79,10 +81,10 @@ namespace LearningPlatform.View
             this.tabPage1.Controls.Add(this.PhoneNumbeTextBox);
             this.tabPage1.Controls.Add(this.AddButton);
             this.tabPage1.Controls.Add(this.RoleComboBox);
-            this.tabPage1.Location = new System.Drawing.Point(4, 33);
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1251, 447);
+            this.tabPage1.Size = new System.Drawing.Size(1251, 453);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Добавление";
             // 
@@ -91,9 +93,9 @@ namespace LearningPlatform.View
             this.PasswordTextBox.BackColor = System.Drawing.Color.LightBlue;
             this.PasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PasswordTextBox.Cue = "Введите пароль";
-            this.PasswordTextBox.Location = new System.Drawing.Point(445, 303);
+            this.PasswordTextBox.Location = new System.Drawing.Point(445, 331);
             this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(360, 24);
+            this.PasswordTextBox.Size = new System.Drawing.Size(360, 19);
             this.PasswordTextBox.TabIndex = 21;
             // 
             // EmailTextBox
@@ -101,9 +103,9 @@ namespace LearningPlatform.View
             this.EmailTextBox.BackColor = System.Drawing.Color.LightBlue;
             this.EmailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EmailTextBox.Cue = "Введите email";
-            this.EmailTextBox.Location = new System.Drawing.Point(445, 243);
+            this.EmailTextBox.Location = new System.Drawing.Point(445, 227);
             this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(360, 24);
+            this.EmailTextBox.Size = new System.Drawing.Size(360, 19);
             this.EmailTextBox.TabIndex = 20;
             // 
             // SecondNameTextBox
@@ -111,9 +113,9 @@ namespace LearningPlatform.View
             this.SecondNameTextBox.BackColor = System.Drawing.Color.LightBlue;
             this.SecondNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SecondNameTextBox.Cue = "Введите фамилию";
-            this.SecondNameTextBox.Location = new System.Drawing.Point(445, 137);
+            this.SecondNameTextBox.Location = new System.Drawing.Point(445, 132);
             this.SecondNameTextBox.Name = "SecondNameTextBox";
-            this.SecondNameTextBox.Size = new System.Drawing.Size(360, 24);
+            this.SecondNameTextBox.Size = new System.Drawing.Size(360, 19);
             this.SecondNameTextBox.TabIndex = 19;
             // 
             // FirstNameTextBox
@@ -121,9 +123,9 @@ namespace LearningPlatform.View
             this.FirstNameTextBox.BackColor = System.Drawing.Color.LightBlue;
             this.FirstNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.FirstNameTextBox.Cue = "Введите имя";
-            this.FirstNameTextBox.Location = new System.Drawing.Point(445, 80);
+            this.FirstNameTextBox.Location = new System.Drawing.Point(445, 75);
             this.FirstNameTextBox.Name = "FirstNameTextBox";
-            this.FirstNameTextBox.Size = new System.Drawing.Size(360, 24);
+            this.FirstNameTextBox.Size = new System.Drawing.Size(360, 19);
             this.FirstNameTextBox.TabIndex = 18;
             // 
             // LoginTextBox
@@ -133,17 +135,17 @@ namespace LearningPlatform.View
             this.LoginTextBox.Cue = "Введите логин";
             this.LoginTextBox.Location = new System.Drawing.Point(16, -31);
             this.LoginTextBox.Name = "LoginTextBox";
-            this.LoginTextBox.Size = new System.Drawing.Size(360, 24);
+            this.LoginTextBox.Size = new System.Drawing.Size(360, 19);
             this.LoginTextBox.TabIndex = 17;
             // 
             // PhoneNumbeTextBox
             // 
             this.PhoneNumbeTextBox.BackColor = System.Drawing.Color.LightBlue;
             this.PhoneNumbeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PhoneNumbeTextBox.Location = new System.Drawing.Point(445, 184);
+            this.PhoneNumbeTextBox.Location = new System.Drawing.Point(445, 179);
             this.PhoneNumbeTextBox.Mask = "8(999) 000-0000";
             this.PhoneNumbeTextBox.Name = "PhoneNumbeTextBox";
-            this.PhoneNumbeTextBox.Size = new System.Drawing.Size(360, 24);
+            this.PhoneNumbeTextBox.Size = new System.Drawing.Size(360, 19);
             this.PhoneNumbeTextBox.TabIndex = 16;
             // 
             // AddButton
@@ -175,7 +177,7 @@ namespace LearningPlatform.View
             "Преподаватель"});
             this.RoleComboBox.Location = new System.Drawing.Point(502, 19);
             this.RoleComboBox.Name = "RoleComboBox";
-            this.RoleComboBox.Size = new System.Drawing.Size(221, 28);
+            this.RoleComboBox.Size = new System.Drawing.Size(221, 24);
             this.RoleComboBox.TabIndex = 15;
             this.RoleComboBox.Text = "Выберите роль";
             // 
@@ -188,10 +190,10 @@ namespace LearningPlatform.View
             this.tabPage3.Controls.Add(this.ChangedSecondNameTextBox);
             this.tabPage3.Controls.Add(this.ChangedFirstNameTextBox);
             this.tabPage3.Controls.Add(this.ChangeUserComboBox);
-            this.tabPage3.Location = new System.Drawing.Point(4, 33);
+            this.tabPage3.Location = new System.Drawing.Point(4, 27);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1251, 447);
+            this.tabPage3.Size = new System.Drawing.Size(1251, 453);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Изменение данных";
             // 
@@ -218,7 +220,7 @@ namespace LearningPlatform.View
             this.ChangedPhoneNumberTextBox.Location = new System.Drawing.Point(826, 192);
             this.ChangedPhoneNumberTextBox.Mask = "8(999) 000-0000";
             this.ChangedPhoneNumberTextBox.Name = "ChangedPhoneNumberTextBox";
-            this.ChangedPhoneNumberTextBox.Size = new System.Drawing.Size(360, 24);
+            this.ChangedPhoneNumberTextBox.Size = new System.Drawing.Size(360, 19);
             this.ChangedPhoneNumberTextBox.TabIndex = 23;
             // 
             // ChangedEmailTextBox
@@ -228,7 +230,7 @@ namespace LearningPlatform.View
             this.ChangedEmailTextBox.Cue = "Изменить email";
             this.ChangedEmailTextBox.Location = new System.Drawing.Point(826, 117);
             this.ChangedEmailTextBox.Name = "ChangedEmailTextBox";
-            this.ChangedEmailTextBox.Size = new System.Drawing.Size(360, 24);
+            this.ChangedEmailTextBox.Size = new System.Drawing.Size(360, 19);
             this.ChangedEmailTextBox.TabIndex = 21;
             // 
             // ChangedSecondNameTextBox
@@ -238,7 +240,7 @@ namespace LearningPlatform.View
             this.ChangedSecondNameTextBox.Cue = "Изменить фамилию";
             this.ChangedSecondNameTextBox.Location = new System.Drawing.Point(30, 192);
             this.ChangedSecondNameTextBox.Name = "ChangedSecondNameTextBox";
-            this.ChangedSecondNameTextBox.Size = new System.Drawing.Size(360, 24);
+            this.ChangedSecondNameTextBox.Size = new System.Drawing.Size(360, 19);
             this.ChangedSecondNameTextBox.TabIndex = 20;
             // 
             // ChangedFirstNameTextBox
@@ -248,7 +250,7 @@ namespace LearningPlatform.View
             this.ChangedFirstNameTextBox.Cue = "Изменить имя";
             this.ChangedFirstNameTextBox.Location = new System.Drawing.Point(30, 117);
             this.ChangedFirstNameTextBox.Name = "ChangedFirstNameTextBox";
-            this.ChangedFirstNameTextBox.Size = new System.Drawing.Size(360, 24);
+            this.ChangedFirstNameTextBox.Size = new System.Drawing.Size(360, 19);
             this.ChangedFirstNameTextBox.TabIndex = 19;
             // 
             // ChangeUserComboBox
@@ -259,7 +261,7 @@ namespace LearningPlatform.View
             this.ChangeUserComboBox.FormattingEnabled = true;
             this.ChangeUserComboBox.Location = new System.Drawing.Point(141, 36);
             this.ChangeUserComboBox.Name = "ChangeUserComboBox";
-            this.ChangeUserComboBox.Size = new System.Drawing.Size(999, 28);
+            this.ChangeUserComboBox.Size = new System.Drawing.Size(999, 24);
             this.ChangeUserComboBox.TabIndex = 2;
             this.ChangeUserComboBox.Text = "Выберите пользователя";
             // 
@@ -268,10 +270,10 @@ namespace LearningPlatform.View
             this.tabPage2.BackColor = System.Drawing.Color.Teal;
             this.tabPage2.Controls.Add(this.RemoveButton);
             this.tabPage2.Controls.Add(this.RemoveUserComboBox);
-            this.tabPage2.Location = new System.Drawing.Point(4, 33);
+            this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1251, 447);
+            this.tabPage2.Size = new System.Drawing.Size(1251, 453);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Удаление";
             // 
@@ -298,13 +300,23 @@ namespace LearningPlatform.View
             this.RemoveUserComboBox.FormattingEnabled = true;
             this.RemoveUserComboBox.Location = new System.Drawing.Point(137, 181);
             this.RemoveUserComboBox.Name = "RemoveUserComboBox";
-            this.RemoveUserComboBox.Size = new System.Drawing.Size(999, 25);
+            this.RemoveUserComboBox.Size = new System.Drawing.Size(999, 21);
             this.RemoveUserComboBox.TabIndex = 4;
             this.RemoveUserComboBox.Text = "Выберите пользовотеля";
             // 
+            // Login
+            // 
+            this.Login.BackColor = System.Drawing.Color.LightBlue;
+            this.Login.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Login.Cue = "Введите логин";
+            this.Login.Location = new System.Drawing.Point(445, 284);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(360, 19);
+            this.Login.TabIndex = 22;
+            // 
             // UsersForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -347,5 +359,6 @@ namespace LearningPlatform.View
         private Button ChangeButton;
         private ComboBox RemoveUserComboBox;
         private Button RemoveButton;
+        private CueTextBox Login;
     }
 }

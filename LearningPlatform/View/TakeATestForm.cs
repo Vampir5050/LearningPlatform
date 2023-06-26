@@ -23,16 +23,47 @@ namespace LearningPlatform.View
             label1.Text += tempTest.Name;
             label2.Text += tempTest.Questions.ElementAt(Counter).Title;
             label4.Text += tempTest.Questions.Count();
+            Counter++;
         }
 
         private void AnswerButton_Click(object sender, EventArgs e)
         {
-            Question TempQuestion = tempTest.Questions.ElementAt(Counter);
+            
+            if(Counter > tempTest.Questions.Count())
+            {
+                AnswerButton.Enabled = false;
+                label5.Text += RightAnswers.ToString();
+                return;
+            }
+            Question TempQuestion = tempTest.Questions.ElementAt(Counter - 1);
             if (TempQuestion is null)
             {
                 return;
             }
-            if(textBox1.Text == TempQuestion.Answers)
+
+            if (Counter < tempTest.Questions.Count())
+            {
+                UpdateQuestion();
+                TestCheck(TempQuestion);
+            }
+            else
+            {
+                TestCheck(TempQuestion);
+                AnswerButton.Enabled = false;
+                label5.Text += RightAnswers.ToString();
+            }
+
+        }
+
+
+        private void UpdateQuestion()
+        {
+            label2.Text = "Вопрос: " + tempTest.Questions.ElementAt(Counter).Title;
+        }
+
+        private void TestCheck(Question question)
+        {
+            if (textBox1.Text.ToLower() == question.Answers.ToLower())
             {
                 RightAnswers++;
                 Counter++;
@@ -41,12 +72,7 @@ namespace LearningPlatform.View
             {
                 Counter++;
             }
-            if(Counter == tempTest.Questions.LastOrDefault().ID)
-            {
-                return;
-            }
-
-            label2.Text = "Вопрос: " + tempTest.Questions.ElementAt(Counter++).Title; ;
         }
+
     }
 }
